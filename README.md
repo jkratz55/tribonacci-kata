@@ -1,6 +1,6 @@
 # Tribonacci Kata
 
-Kata exercise from CodeWars.com
+Kata exercise link https://www.codewars.com/kata/tribonacci-sequence
 
 ## Assignment
 
