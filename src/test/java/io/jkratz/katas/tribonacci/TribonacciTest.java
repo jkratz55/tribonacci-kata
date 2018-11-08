@@ -33,6 +33,11 @@ public class TribonacciTest {
     }
 
     @Test
+    public void testTribonacciNIs3() {
+        assertArrayEquals(new int[] {0,1,1}, this.tribonacci.calculate(new int[] {0, 1, 1}, 3));
+    }
+
+    @Test
     public void testWithZeroN() {
         int[] seed = {0, 1, 1};
         assertArrayEquals(new int[0], this.tribonacci.calculate(seed, 0));
