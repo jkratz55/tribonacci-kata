@@ -28,6 +28,11 @@ public class TribonacciTest {
     }
 
     @Test
+    public void testTribonacciNLessThan3() {
+        assertArrayEquals(new int[] {0,1}, this.tribonacci.calculate(new int[] {0, 1, 1}, 2));
+    }
+
+    @Test
     public void testWithZeroN() {
         int[] seed = {0, 1, 1};
         assertArrayEquals(new int[0], this.tribonacci.calculate(seed, 0));

@@ -1,5 +1,7 @@
 package io.jkratz.katas.tribonacci;
 
+import java.util.Arrays;
+
 public class Tribonacci {
 
     /**
@@ -25,6 +27,11 @@ public class Tribonacci {
         // contain 3 numbers
         if (seed.length != 3) {
             throw new IllegalArgumentException("seed must be an array of integers with exactly three values");
+        }
+
+        // If n is less than the length of the seed return subset of the seed
+        if (n < 3) {
+            return Arrays.copyOfRange(seed, 0, n);
         }
 
         // Create a new array and copy the seed values
